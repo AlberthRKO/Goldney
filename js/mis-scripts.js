@@ -23,7 +23,7 @@ $(function () {
     navbars: [
       {
         "position": "top",
-        "content": ['<a href="index.html"> <span class="h6 titulo2 pt-2" >GOLDNEY ELECTRONICS</span> </a>']
+        "content": ['<a href="index.html"> <span class="h6 titulo2 pt-2 mx-auto" >GOLDNEY ELECTRONICS</span> </a>']
       }
     ]
   });
@@ -190,7 +190,7 @@ $(function () {
 
 var swiperBeneficios = new Swiper('#swiper-container', {
   loop: true,
-  slidesPerView: 7,
+  slidesPerView: 6,
   spaceBetween: 30,
 
 

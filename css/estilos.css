@@ -272,7 +272,8 @@ body {
   display: block; }
 
 .derechosAutor {
-  color: #2c4964; }
+  color: #2c4964;
+  font-weight: bold; }
 
 .bg-footer {
   background-color: white;
@@ -588,5 +589,32 @@ th {
 
 .patrocinadores img {
   width: 100px; }
+
+.btn-iconos:hover,
+.btn-iconos:focus {
+  background: none; }
+
+button:focus {
+  outline: none !important; }
+
+.mburger:hover {
+  background: none !important; }
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none !important; }
+
+@media (max-width: 500px) {
+  .mm-navbars_top,
+  .mm-panels {
+    width: 80%; } }
+@media (max-width: 420px) {
+  .mm-navbars_top,
+  .mm-panels {
+    width: 70%; } }
+@media (max-width: 350px) {
+  .mm-navbars_top,
+  .mm-panels {
+    width: 60%; } }
 
 /*# sourceMappingURL=estilos.css.map */
