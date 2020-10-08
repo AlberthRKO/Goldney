@@ -1,0 +1,845 @@
+.row > * {
+  //border: 1px solid rgb(231, 24, 24);
+}
+
+//---------------------------------------
+//1. PATRONES DE COLORES
+//---------------------------------------
+$principal: #e99800;
+$secundario: #2c4964;
+$oscuro: #999;
+$texto: #333;
+
+//---------------------------------------
+// 2. TIPOGRAFIA DEL SITIO
+//---------------------------------------
+
+html {
+  font-size: 14px;
+}
+
+body {
+  color: $texto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+//---------------------------------------
+// 3. ESTILOS GENERALES PARA LOS BOTONES
+//---------------------------------------
+.btn {
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+}
+
+//---------------------------------------
+// 4. ESTILOS COLOR PRIMARY
+//---------------------------------------
+.titulo2 {
+  font-family: "Aldrich", sans-serif;
+  color: #000;
+  color: $principal;
+}
+
+.bg-primary {
+  background-color: $principal !important;
+}
+
+.text-primary {
+  color: $principal !important;
+}
+
+.btn-primary {
+  background-color: $principal;
+  border-color: $principal;
+}
+
+.btn-primary:hover {
+  background-color: lighten($principal, 5%);
+  border-color: $principal;
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba($principal, 0.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: lighten($principal, 5%);
+  border-color: lighten($principal, 20%);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($principal, 0.5);
+}
+
+//---------------------------------------
+// 5. ESTILOS COLOR SECONDARY
+//---------------------------------------
+
+.bg-secondary {
+  background-color: $secundario !important;
+}
+
+.text-secondary {
+  color: $secundario !important;
+}
+
+.btn-secondary {
+  background-color: $secundario;
+  border-color: $secundario;
+}
+
+.btn-secondary:hover {
+  background-color: lighten($secundario, 5%);
+  border-color: $secundario;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  box-shadow: 0 0 0 0.2rem rgba($secundario, 0.5);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: lighten($secundario, 5%);
+  border-color: lighten($secundario, 20%);
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($secundario, 0.5);
+}
+
+//---------------------------------------
+// 6. ESTILOS COLOR DARK
+//---------------------------------------
+
+.bg-dark {
+  background-color: $oscuro !important;
+}
+
+.text-dark {
+  color: $oscuro !important;
+}
+
+.btn-dark {
+  background-color: $oscuro;
+  border-color: $oscuro;
+}
+
+.btn-dark:hover {
+  background-color: lighten($oscuro, 5%);
+  border-color: $oscuro;
+}
+
+.btn-dark:focus,
+.btn-dark.focus {
+  box-shadow: 0 0 0 0.2rem rgba($oscuro, 0.5);
+}
+
+.btn-dark:not(:disabled):not(.disabled):active,
+.btn-dark:not(:disabled):not(.disabled).active,
+.show > .btn-dark.dropdown-toggle {
+  color: #fff;
+  background-color: lighten($oscuro, 5%);
+  border-color: lighten($oscuro, 20%);
+}
+
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba($oscuro, 0.5);
+}
+
+//---------------------------------------
+// 7. ESTILOS #NAVEGACION
+//---------------------------------------
+#navegacion {
+  background: $principal;
+
+  .container {
+    max-width: 100%;
+  }
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 12rem;
+      height: auto;
+    }
+  }
+}
+//Estilos Mmenu.js
+.mm-navbars_top .mm-navbar {
+  background: white;
+}
+
+//Estilos de los enlaces
+.mm-menu a,
+.mm-menu a:active,
+.mm-menu a:hover,
+.mm-menu a:link,
+.mm-menu a:visited {
+  color: rgb(51, 51, 51);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+//Estilos viñeta menu
+.mm-btn_next:after,
+.mm-btn_prev:before {
+  border: 2px solid rgb(51, 51, 51);
+  border-bottom: none;
+  border-right: none;
+  width: 4px;
+  height: 4px;
+}
+
+//Estilos para Mburger
+.mburger {
+  --mb-bar-width: 0.35; // Anchura de las barras del boton
+  --mb-bar-height: 4px; // Altura de las barras del boton
+  --mb-bar-spacing: 5px; //Separación de las barras del boton
+  color: #fff !important;
+  height: 50px;
+  width: 50px;
+  line-height: 0;
+  padding: 0;
+  &:hover {
+    background: rgba(255, 255, 255, 0.21);
+  }
+  b {
+    margin-left: -6px;
+  }
+}
+/* Estilos para los botones del encabezado */
+.btn-iconos {
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 0 0.5rem;
+  &:hover,
+  &:focus {
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.boton-carrito {
+  .dropdown-menu {
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
+    &::before {
+      content: "";
+      position: absolute;
+      background: white;
+      width: 1.5rem;
+      height: 1.5rem;
+      right: 1rem;
+      top: -0.5rem;
+      transform: rotate(45deg);
+      border-radius: 0.2rem;
+      box-shadow: -5px -5px 5px rgba(8, 8, 8, 0.18);
+    }
+  }
+}
+/* Ocultamos el icono .fa-times por defecto */
+.btn-buscar {
+  .fa-times {
+    display: none;
+  }
+  &.boton-buscar-activo .fa-search {
+    display: none;
+  }
+
+  &.boton-buscar-activo .fa-times {
+    display: block;
+  }
+}
+
+//---------------------------------------
+// 8. ESTILOS #DETALLES-ENCABEZADO
+//---------------------------------------
+#detalles-encabezado {
+  .nav-link {
+    color: #333;
+    padding: 0 0.7rem;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+    &.active {
+      font-weight: bold;
+    }
+  }
+}
+.encabezadoFijo {
+  background: $secundario !important;
+  z-index: 9999;
+}
+//---------------------------------------
+// 9. ESTILOS #slideBeneficios
+//---------------------------------------
+
+//Estilos para los botones atras y adelante
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f053";
+  font-weight: 900;
+  color: #c7c7c7;
+  transition: color ease 0.5s;
+}
+.swiper-button-next::after {
+  content: "\f054";
+}
+.swiper-button-next:hover::after,
+.swiper-button-prev:hover::after {
+  color: $principal;
+}
+//Estilos paginacion
+.swiper-pagination-bullet {
+  width: 1.4rem;
+  height: 1.4rem;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+  transition: opacity ease 0.5s;
+}
+.swiper-pagination-bullet:hover {
+  opacity: 0.5;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: $principal;
+}
+.swiper-pagination-bullet-active:hover {
+  opacity: 1;
+}
+
+//---------------------------------------
+// 10. ESTILOS .navSlider
+//---------------------------------------
+.navSlider {
+  .swiper-slide {
+    width: auto !important;
+    margin: 0 0.6rem;
+    padding: 0.3rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #807f7f;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all ease 0.3s;
+  }
+  .swiper-slide-thumb-active {
+    color: $principal;
+    border-bottom: 2px solid;
+  }
+}
+
+//---------------------------------------
+// 11. ESTILOS #slideFunciones
+//---------------------------------------
+
+#slideFunciones {
+  background: #dedede;
+}
+
+//---------------------------------------
+// 12. ESTILOS #pie-pagina
+//---------------------------------------
+// #pie-pagina {
+//   background: #525252;
+//   a {
+//     color: #e4e3e3;
+//   }
+//   ul a {
+//     font-size: 0.85rem;
+//     padding: 0.25rem 0;
+//     display: block;
+//   }
+// }
+// //Estilos Redes Sociales
+
+// .redesSocialesCreditos {
+//   background: #313131;
+// }
+// .enlacesSociales {
+//   a {
+//     background: #adadad;
+//     display: inline-flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 4rem;
+//     height: 4rem;
+//     font-size: 2.5rem;
+//     color: #313131 !important;
+//     margin: 0 0.3rem;
+//     border-radius: 0.2rem;
+//     text-decoration: none;
+//     transition: transform ease 0.15s;
+
+//     &:hover {
+//       transform: scale(1.25);
+//     }
+//   }
+// }
+// //Estilos .enlacesSecundarios
+// .enlacesSecundarios {
+//   li {
+//     a {
+//       font-size: 1rem !important;
+//       padding: 0.15rem 1rem !important;
+//     }
+//   }
+// }
+
+// // Agregaciones
+// .btn-buscar2 {
+//   background-color: #e99800 !important;
+// }
+
+.columna-inclinada::before {
+  content: "";
+  position: absolute;
+  background: $principal;
+  left: -100%; //asemos que tome mas espacio q su padre
+  top: 0;
+  right: -100%; //lo mismo
+  bottom: 0;
+}
+
+.enlaces-secundario {
+  // doble borde
+  border-bottom: 0.1px solid $principal;
+  // desplazamiento horizontal y vertical
+  box-shadow: 0 1px #212529;
+}
+
+.enlaces-secundario a {
+  padding: 1rem;
+  color: $secundario;
+  text-decoration: none;
+  display: block;
+}
+
+.derechosAutor {
+  color: $secundario;
+}
+
+.bg-footer {
+  background-color: white;
+  border: 1px solid $principal;
+}
+
+//---------------------------------------
+// x. SHOW DE LAS MEDIAS QUERIES
+//---------------------------------------
+@media (min-width: 576px) {
+  .enlacesSecundarios {
+    li {
+      display: flex;
+      align-items: center;
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f111";
+        color: #fff;
+        font-size: 0.4rem;
+      }
+      &:first-child::before {
+        content: "";
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+
+  #navegacion .navbar-brand {
+    margin-right: 1.5rem;
+    padding: 0.7rem 0;
+    position: static;
+    left: auto;
+    transform: translateX(0);
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    padding: 0.9rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover,
+  .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(#e99800, 0.23);
+    box-shadow: 0 -3px 0 white inset;
+    cursor: pointer;
+  }
+  #menu-principal {
+    .dropdown-toggle::after {
+      transform: scale(0.7) translateY(3px);
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      box-shadow: 0 3px 10px #0404045e;
+      border: 0;
+      background: #f7f7f7;
+      transform: translateY(-2px);
+    }
+    .dropdown-menu {
+      .fa-windows {
+        transform: scale(0.8) translateY(1px);
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  #navegacion {
+    .container {
+      max-width: 1140px;
+    }
+    .campo-buscar,
+    .boton-buscar {
+      border: 1px solid #eaeaea;
+      background: white;
+      color: black;
+      font-weight: lighter;
+    }
+    .boton-buscar:hover,
+    .boton-buscar:focus {
+      background: #bdbdbd;
+      color: #fff;
+    }
+    .campo-buscar::placeholder {
+      color: #444;
+    }
+    .boton-buscar {
+      color: #e99800;
+    }
+    .boton-buscar:hover {
+      color: white;
+      background: #e99800;
+    }
+  }
+}
+
+#topbar {
+  background: #fff;
+  height: 40px;
+  font-size: 14px;
+  transition: all 0.5s;
+}
+
+#topbar.topbar-scrolled {
+  top: -40px;
+}
+
+#topbar .contact-info a {
+  line-height: 1;
+  color: #444444;
+  transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+  color: #e99800;
+}
+
+#topbar .contact-info i {
+  color: #e99800;
+  padding-right: 4px;
+  margin-left: 15px;
+}
+
+#topbar .contact-info i:first-child {
+  margin-left: 0;
+}
+
+#topbar .social-links a {
+  color: #e99800;
+  padding-left: 15px;
+  display: inline-block;
+  line-height: 1px;
+  transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+  color: #e99800;
+}
+
+#topbar .social-links a:first-child {
+  border-left: 0;
+}
+
+.navbar {
+  box-shadow: 0px 3px 15px rgba(#e99800, 0.2) !important;
+}
+
+@media (max-width: 768px) {
+  .tituloContenido h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .tituloContenido h2 {
+    font-size: 2rem;
+  }
+  .tituloContenido p {
+    font-size: 0.8rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f1f7fd;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: $secundario;
+}
+.section-title2 h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  color: $secundario;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: $principal;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title2 h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title2 h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: $principal;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+.services .icon-box {
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: all ease-in-out 0.3s;
+}
+
+.services .icon-box .icon {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  background: $principal;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transform-style: preserve-3d;
+}
+footer .icon-box .icon {
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease-out 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.services .icon-box .icon i {
+  color: #fff;
+  font-size: 28px;
+}
+footer .icon-box .icon i {
+  color: $principal;
+  font-size: 15px;
+}
+
+.services .icon-box .icon::before {
+  position: absolute;
+  content: "";
+  left: -8px;
+  top: -8px;
+  height: 100%;
+  width: 100%;
+  background: #cdd2b3;
+  border-radius: 5px;
+  transition: all 0.3s ease-out 0s;
+  transform: translateZ(-1px);
+}
+
+.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services .icon-box h4 a {
+  color: $secundario;
+}
+
+.services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+  background: $principal;
+  border-color: $principal;
+  box-shadow: 0px 3px 15px rgba($principal, 0.1);
+}
+
+.services .icon-box:hover .icon {
+  background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: $principal;
+}
+footer .icon-box:hover .icon {
+  background: $principal;
+  border: 1px solid white;
+}
+
+footer .icon-box:hover .icon i {
+  color: white;
+}
+
+.services .icon-box:hover .icon::before {
+  background: #cdd2b3;
+}
+
+.services .icon-box:hover h4 a {
+  color: #fff;
+}
+.services .icon-box:hover p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.services .icon-box a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  // se expande mas de la cuenta xeso al before le quitamos su expansion
+  .columna-inclinada::before {
+    left: -300%;
+    right: 0px;
+    transform: skewX(-20deg);
+  }
+}
+
+@media (min-width: 1200px) {
+  // se expande mas de la cuenta xeso al before le quitamos su expansion
+  .columna-inclinada::before {
+    right: -120px;
+  }
+}
+
+// Seccion de Formas de Pago
+.estiloTabla {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Alineamiento de tablas por el boton */
+#tablas tr td,
+#tablas tr th {
+  vertical-align: middle;
+}
+
+th {
+  text-transform: capitalize;
+}
+
+.patrocinadores img {
+  width: 100px;
+}
