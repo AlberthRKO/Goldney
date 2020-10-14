@@ -20,7 +20,7 @@ html {
 
 body {
   color: $texto;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 300;
 }
 
@@ -164,7 +164,7 @@ body {
 // 7. ESTILOS #NAVEGACION
 //---------------------------------------
 #navegacion {
-  background: $principal;
+  background: transparent;
 
   .container {
     max-width: 100%;
@@ -290,7 +290,8 @@ body {
   }
 }
 .encabezadoFijo {
-  background: $secundario !important;
+  background: $principal !important;
+  box-shadow: 0px 3px 15px rgba(#e99800, 0.2) !important;
   z-index: 9999;
 }
 //---------------------------------------
@@ -496,7 +497,7 @@ body {
   .navbar-dark .navbar-nav .nav-link:hover,
   .navbar-dark .navbar-nav .nav-link:focus {
     color: rgba(255, 255, 255, 0.95);
-    background: rgba(#e99800, 0.23);
+    // background: rgba(#e99800, 0.23);
     box-shadow: 0 -3px 0 white inset;
     cursor: pointer;
   }
@@ -596,9 +597,9 @@ body {
   border-left: 0;
 }
 
-.navbar {
-  box-shadow: 0px 3px 15px rgba(#e99800, 0.2) !important;
-}
+// .navbar {
+//   box-shadow: 0px 3px 15px rgba(#e99800, 0.2) !important;
+// }
 
 @media (max-width: 768px) {
   .tituloContenido h2 {
@@ -704,7 +705,7 @@ section {
   padding: 80px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.4s;
 }
 
 .services .icon-box .icon {

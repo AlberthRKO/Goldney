@@ -23,6 +23,11 @@
     <!-- Cargando "Mburger" -->
     <link rel="stylesheet" href="libs/mburger/dist/mburger.css">
 
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
     <!-- Cargando "Swiper.js" -->
     <link rel="stylesheet" href="libs/swiper/package/css/swiper.min.css">
 
@@ -37,188 +42,203 @@
 <body>
     <div id="my-page">
 
-        <div id="topbar" class="d-none d-lg-flex align-items-center ">
-            <div class="container d-flex">
-                <div class="contact-info mr-auto">
-                    <i class="fab fa-google-plus-g"></i> <a href="#">sales@goldney.net</a>
-                    <i class="fab fa-whatsapp"></i> +34 91 523 54 28
-                    <i class="fa fa-map-marked-alt"></i> Calle Rodriguez San Pedro, 2, #404#, 28015, Madrid-Spain
-                </div>
-                <div class="social-links">
-                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="skype"><i class="fab fa-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
-                </div>
-            </div>
-        </div>
-        <!-- Seccion #navegacion -->
-        <nav class="navbar navbar-expand-lg navbar-dark py-0 px-0 " id="navegacion">
-            <div class="container-fluid align-items-stretch flex-nowrap px-0 px-lg-3 px-xl-5">
-
-                <button class="navbar-toggler collapsed mburger mburger--spin" type="button" data-toggle="collapse"
-                    data-target="#menu-principal" aria-controls="menu-prncipal" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <b></b>
-                    <b></b>
-                    <b></b>
-
-                </button>
-
-                <a class="navbar-brand align-self-center" href="#">
-                    <span class="h4 align-middle text-white" style="font-family: 'Aldrich', sans-serif;">GOLDNEY
-                        ELECTRONICS</span>
-                </a>
-
-                <div class="navbar-collapse collapse" id="menu-principal">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item dropdown active">
-                            <span class="nav-link dropdown-toggle" id="item-menu-products" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Ofertas</span>
-
-                            <div class="dropdown-menu" aria-labelledby="item-menu-products">
-                                <a class="dropdown-item" href="#">
-                                    Snagit
-                                    <i class="fab fa-windows text-dark d-none d-lg-inline "></i>
-                                    <i class="fab fa-apple text-dark d-none d-lg-inline "></i>
-                                    <p
-                                        class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
-                                        Screen Capture & Screen Recorder
-
-                                    </p>
-
-                                </a>
-
-                                <a class="dropdown-item" href="#">
-                                    Camtasia
-                                    <i class="fab fa-windows text-dark d-none d-lg-inline"></i>
-                                    <i class="fab fa-apple text-dark d-none d-lg-inline"></i>
-                                    <p
-                                        class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
-                                        Screen Recorder & Video Editor
-
-                                    </p>
-
-                                </a>
-
-                                <a class="dropdown-item" href="#">
-                                    ScreenCast
-                                    <i class="fab fa-windows text-dark d-none d-lg-inline"></i>
-                                    <i class="fab fa-apple text-dark d-none d-lg-inline"></i>
-                                    <p
-                                        class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
-                                        Video & Content Hosting
-                                    </p>
 
 
-                                </a>
-                            </div>
-                        </li>
+        <section id="animacion" class="swiper-container" style="height: 100vh;">
 
-                        <li class="nav-item dropdown">
-                            <span class="nav-link dropdown-toggle" id="item-menu-solutions" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">Productos</span>
-
-                            <div class="dropdown-menu" aria-labelledby="item-menu-solutions">
-                                <a class="dropdown-item" href="#">
-                                    Businness
-                                    <p
-                                        class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
-                                        Small business and enterprise
-
-                                    </p>
-
-                                </a>
-                                <a class="dropdown-item" href="#">
-                                    Education
-
-                                    <p
-                                        class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
-                                        Higher education solution
-
-                                    </p>
-                                </a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Excedentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pedidos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div data-juggler-target="caja-buscar" data-juggler-media-query="(min-width: 1200px)"></div>
-
-                <!-- <a href="#" class="btn-iconos d-none d-lg-flex align-items-lg-center px-lg-3 ">
-                    <i class="fas fa-phone-alt fa-lg"></i>
-                </a> -->
-                <!-- <div class="dropdown boton-carrito ml-auto">
-                    <button class="btn-iconos dropdown-toggle h-100" type="button" id="menu-carrito"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-shopping-cart fa-lg"></i>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-carrito">
-                        <span class="dropdown-item-text text-nowrap"> Your cart is empty</span>
+            <header id="presentacion" class="fixed-top">
+                <div id="topbar" class="d-none d-lg-flex align-items-center" style="background: transparent;">
+                    <div class="container d-flex">
+                        <div class="contact-info mr-auto text-white">
+                            <i class="fab fa-google-plus-g"></i> sales@goldney.net
+                            <i class="fab fa-whatsapp"></i> +34 91 523 54 28
+                            <i class="fa fa-map-marked-alt"></i> Calle Rodriguez San Pedro, 2, #404#, 28015,
+                            Madrid-Spain
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="skype"><i class="fab fa-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
+                        </div>
                     </div>
-                </div> .fin de .boton-carrito -->
-
-
-
-                <button class="btn-iconos btn-buscar px-3 d-xl-none pt-1" type="button" data-toggle="collapse"
-                    data-target="#formulario-buscar" aria-expanded="false" aria-controls="formulario-buscar">
-
-                    <i class="fas fa-search fa-lg fa-fw"></i>
-                    <i class="fas fa-times fa-lg fa-fw"></i>
-
-                </button>
-                <!-- <a href="#" class="btn btn-outline-light d-none d-lg-block align-self-lg-center ml-lg-2 px-xl-3">Sign
-                    in</a> -->
-
-            </div>
-        </nav>
-
-        <form class="collapse d-xl-flex align-items-xl-center mr-xl-0" id="formulario-buscar"
-            data-juggler-source="caja-buscar">
-
-            <div class="input-group p-3 p-xl-0">
-                <input type="text" name="campo-buscar" class="form-control campo-buscar"
-                    placeholder="Buscar en GoldNey">
-                <div class="input-group-append">
-                    <button class="btn btn-primary boton-buscar  py-0 px-4 px-xl-2" type="button">
-                        <i class="fas fa-search fa-lg pt-2"></i>
-                    </button>
                 </div>
-            </div>
+                <!-- Seccion #navegacion -->
+                <nav class="navbar navbar-expand-lg navbar-dark py-0 px-0" id="navegacion">
+                    <div class="container-fluid align-items-stretch flex-nowrap px-0 px-lg-5 px-xl-5">
 
-        </form>
+                        <button class="navbar-toggler collapsed mburger mburger--spin" type="button"
+                            data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-prncipal"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <b></b>
+                            <b></b>
+                            <b></b>
 
-        <section id="animacion" class="swiper-container" style="height: 80vh;">
+                        </button>
+
+                        <a class="navbar-brand align-self-center" href="#">
+                            <span class="h4 align-middle text-white" style="font-family: 'Aldrich', sans-serif;">GOLDNEY
+                                ELECTRONICS</span>
+                        </a>
+
+                        <div class="navbar-collapse collapse" id="menu-principal">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item dropdown active">
+                                    <span class="nav-link dropdown-toggle" id="item-menu-products"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ofertas</span>
+
+                                    <div class="dropdown-menu" aria-labelledby="item-menu-products">
+                                        <a class="dropdown-item" href="#">
+                                            Snagit
+                                            <i class="fab fa-windows text-dark d-none d-lg-inline "></i>
+                                            <i class="fab fa-apple text-dark d-none d-lg-inline "></i>
+                                            <p
+                                                class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
+                                                Screen Capture & Screen Recorder
+
+                                            </p>
+
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            Camtasia
+                                            <i class="fab fa-windows text-dark d-none d-lg-inline"></i>
+                                            <i class="fab fa-apple text-dark d-none d-lg-inline"></i>
+                                            <p
+                                                class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
+                                                Screen Recorder & Video Editor
+
+                                            </p>
+
+                                        </a>
+
+                                        <a class="dropdown-item" href="#">
+                                            ScreenCast
+                                            <i class="fab fa-windows text-dark d-none d-lg-inline"></i>
+                                            <i class="fab fa-apple text-dark d-none d-lg-inline"></i>
+                                            <p
+                                                class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
+                                                Video & Content Hosting
+                                            </p>
+
+
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <span class="nav-link dropdown-toggle" id="item-menu-solutions"
+                                        data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">Productos</span>
+
+                                    <div class="dropdown-menu" aria-labelledby="item-menu-solutions">
+                                        <a class="dropdown-item" href="#">
+                                            Businness
+                                            <p
+                                                class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
+                                                Small business and enterprise
+
+                                            </p>
+
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            Education
+
+                                            <p
+                                                class="text-muted small font-weight-light border-bottom pb-2 mb-1 d-none d-lg-block">
+                                                Higher education solution
+
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Excedentes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pedidos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div data-juggler-target="caja-buscar" data-juggler-media-query="(min-width: 1200px)"></div>
+
+                        <!-- <a href="#" class="btn-iconos d-none d-lg-flex align-items-lg-center px-lg-3 ">
+                            <i class="fas fa-phone-alt fa-lg"></i>
+                        </a> -->
+                        <!-- <div class="dropdown boton-carrito ml-auto">
+                            <button class="btn-iconos dropdown-toggle h-100" type="button" id="menu-carrito"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-carrito">
+                                <span class="dropdown-item-text text-nowrap"> Your cart is empty</span>
+                            </div>
+                        </div> .fin de .boton-carrito -->
+
+
+
+                        <button class="btn-iconos btn-buscar px-3 d-xl-none pt-1" type="button" data-toggle="collapse"
+                            data-target="#formulario-buscar" aria-expanded="false" aria-controls="formulario-buscar">
+
+                            <i class="fas fa-search fa-lg fa-fw"></i>
+                            <i class="fas fa-times fa-lg fa-fw"></i>
+
+                        </button>
+                        <!-- <a href="#" class="btn btn-outline-light d-none d-lg-block align-self-lg-center ml-lg-2 px-xl-3">Sign
+                            in</a> -->
+
+                    </div>
+                </nav>
+
+                <form class="collapse d-xl-flex align-items-xl-center mr-xl-0" id="formulario-buscar"
+                    data-juggler-source="caja-buscar">
+
+                    <div class="input-group p-3 p-xl-0">
+                        <input type="text" name="campo-buscar" class="form-control campo-buscar"
+                            placeholder="Buscar en GoldNey" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary boton-buscar  py-0 px-4 px-xl-2" type="button">
+                                <i class="fas fa-search fa-lg pt-2"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </header>
+
             <div class="swiper-wrapper">
                 <div class="swiper-slide d-flex justify-content-center align-items-center"
                     style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),url('images/slide1.jpg') center center / cover">
 
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-9 tituloContenido text-center">
-                                <img src="images/LOgo.png" alt="logo del sitio" class="img-fluid mb-3" width="120">
-                                <h2 class="display-4 font-weight-bold text-uppercase text-primary text-center">
+                            <div class="col-9 col-lg-6 tituloContenido text-center">
+                                <img src="images/LOgo.png" alt="logo del sitio"
+                                    class="img-fluid mb-3 d-block d-lg-none text-center mx-auto" width="100"
+                                    data-aos="fade-down-right">
+                                <h2 class="display-4 font-weight-bold text-uppercase text-primary text-center text-lg-left"
+                                    data-aos="fade-down-right">
                                     Distribuidor Global
                                     de Componentes electronicos
                                 </h2>
-                                <p class="text-white text-center">GoldNey Electronics es un
+                                <p class="text-white text-center text-lg-left" data-aos="fade-up-right">GoldNey
+                                    Electronics es un
                                     distribuidor líder de
                                     componentes electrónicos y
                                     eléctricos, especializado en el suministro de componenetes obsoletos, descatalogados
                                     o de dificil localización</p>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-6">
+                                <img src="images/Snagit-2019-Features-Favorites.svg" alt="" class="img-fluid"
+                                    data-aos="zoom-in-left">
                             </div>
                         </div>
                     </div>
@@ -230,16 +250,21 @@
 
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-9 tituloContenido">
-                                <h2 class="display-4 font-weight-bold text-uppercase text-primary text-center">
+                            <div class="col-9 col-lg-6 tituloContenido text-left">
+                                <h2 class="display-4 font-weight-bold text-uppercase text-primary text-center text-lg-left"
+                                    data-aos="fade-up-right">
                                     Distribuidor Global
                                     de Componentes electronicos
                                 </h2>
-                                <p class="text-white text-center">GoldNey Electronics es un
+                                <p class="text-white text-center text-lg-left" data-aos="fade-up-right">GoldNey
+                                    Electronics es un
                                     distribuidor líder de
                                     componentes electrónicos y
                                     eléctricos, especializado en el suministro de componenetes obsoletos, descatalogados
                                     o de dificil localización</p>
+                            </div>
+                            <div class="d-none d-lg-block col-lg-6">
+                                <img src="images/Snagit-2019-Features-Simplify.svg" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -252,7 +277,6 @@
 
 
         </section>
-
 
         <section id="services" class="services">
             <div class="container">
@@ -269,7 +293,8 @@
                 <div class="row">
 
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in-right"
+                        data-aos-once="true">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-comments"></i></div>
                             <h4><a href="">PETICIÓN DE OFERTA</a></h4>
@@ -277,7 +302,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in-up"
+                        data-aos-once="true">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-clipboard-list"></i></div>
                             <h4><a href="">PRODUCTOS</a></h4>
@@ -285,7 +311,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in-left"
+                        data-aos-once="true">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-server"></i></div>
                             <h4><a href="">SERVICIOS</a></h4>
@@ -293,7 +320,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mx-auto">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mx-auto" data-aos="zoom-in-right"
+                        data-aos-once="true">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-address-book"></i></div>
                             <h4><a href="">GESTIÓN DE EXCENDETE</a></h4>
@@ -301,7 +329,8 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mx-auto">
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mx-auto" data-aos="zoom-in-left"
+                        data-aos-once="true">
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-cart-plus"></i></div>
                             <h4><a href="">PEDIDOS</a></h4>
@@ -411,7 +440,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in-right" data-aos-once="true">
                         <div class="section-title2 text-center">
                             <h3>Nuestros RFQ</h3>
                         </div>
@@ -466,7 +495,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="zoom-in-left" data-aos-once="true">
                         <div class="section-title2 text-center pt-5 pt-md-0">
                             <h3>Formas de Pago</h3>
                         </div>
@@ -594,7 +623,7 @@
                                             </div>
                                             <!-- fa-fw alinea los iconos -->
                                             <div class="detalle mt-1">
-                                                <span class=" text-secondary">Rodriguez San Pedro, 2,
+                                                <span class=" text-white">Rodriguez San Pedro, 2,
                                                     #404#, 28015
                                                 </span>
                                             </div>
@@ -607,7 +636,7 @@
                                             </div>
                                             <div class="detalle mt-1">
 
-                                                <span class=" text-secondary">+34 91 523 54 28</span>
+                                                <span class=" text-white">+34 91 523 54 28</span>
                                             </div>
 
                                         </li>
@@ -619,7 +648,7 @@
                                             </div>
                                             <div class="detalle mt-1">
 
-                                                <span class=" text-secondary">sales@goldney.com</span>
+                                                <span class=" text-white">sales@goldney.com</span>
                                             </div>
 
                                         </li>
@@ -629,7 +658,7 @@
                                             </div>
                                             <div class="detalle mt-1">
 
-                                                <span class=" text-secondary">+34 91 521 42 50</span>
+                                                <span class=" text-white">+34 91 521 42 50</span>
                                             </div>
 
                                         </li>
@@ -696,6 +725,8 @@
 
     <!-- Carga de Juggler.js -->
     <script src="libs/juggler/dist/juggler.min.js"></script>
+
+    <script src="js/aos.js"></script>
 
     <!-- Carga de Swiper.js -->
     <script src="libs/swiper/package/js/swiper.min.js"></script>

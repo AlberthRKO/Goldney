@@ -128,7 +128,7 @@ $(function () {
 
   var swiperBeneficios = new Swiper('#animacion', {
 
-    speed: 400,
+    speed: 1500,
     grabCursor: true,
     loop: true,
 
@@ -200,6 +200,13 @@ var swiperBeneficios = new Swiper('#swiper-container', {
 
 
 })
+
+
+AOS.init({
+  duration: 1000,
+  easing: 'slide'
+});
+
 
 // let numeros = 4
 
