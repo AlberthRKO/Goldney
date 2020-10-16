@@ -181,7 +181,30 @@ $(function () {
 
 
 
+  //Formulario con animacion
+  $(".form-control").each(function () {
+    formmat($(this));
+  });
+  $('.form-control').on('blur', function () {
+    formmat($(this));
+  });
+  $('.form-control').on('focus', function () {
+    $(this).parent('.form-group').addClass("fill");
+  });
 
+  function formmat(e) {
+    var $temp = 0;
+    try {
+      $temp = e.attr('placeholder').length;
+    } catch (err) {
+      $temp = 0;
+    }
+    if (e.val().length > 0 || $temp > 0) {
+      e.parent('.form-group').addClass("fill");
+    } else {
+      e.parent('.form-group').removeClass("fill");
+    }
+  }
 
 
 
@@ -206,6 +229,33 @@ AOS.init({
   duration: 1000,
   easing: 'slide'
 });
+
+$('.form-control').on('focus', function () {
+  $(this).parent('.form-group').addClass("fill");
+});
+
+function formmat(e) {
+  var $temp = 0;
+  try {
+    $temp = e.attr('placeholder').length;
+  } catch (err) {
+    $temp = 0;
+  }
+  if (e.val().length > 0 || $temp > 0) {
+    e.parent('.form-group').addClass("fill");
+  } else {
+    e.parent('.form-group').removeClass("fill");
+  }
+}
+
+$('.guardarDatos').click(function () {
+  $('.datosComponente').addClass("d-flex");
+});
+$('.borrarDatos').click(function () {
+  $('.datosComponente').removeClass('d-flex');
+  $('.datosComponente').addClass("d-none");
+});
+
 
 
 // let numeros = 4
