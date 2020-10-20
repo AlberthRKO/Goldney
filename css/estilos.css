@@ -762,12 +762,6 @@ Estilos Formulario
   font-size: 14px;
   color: #728394; }
 
-.contact .info .fax,
-.contact .info .certificado,
-.contact .info .email,
-.contact .info .telefono {
-  margin-top: 40px; }
-
 .contact .info .email:hover i,
 .contact .info .calle:hover i,
 .contact .info .fax:hover i,
