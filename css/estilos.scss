@@ -952,3 +952,134 @@ Estilos Formulario
   font-size: 15px;
   line-height: 1.42857;
 }
+
+.accordion-style-4 .card {
+  margin-bottom: 10px;
+  border-width: 0 0 0 2px;
+  border-style: solid;
+  border-color: $principal;
+  border-radius: 0;
+}
+.accordion-style-4 .card-header {
+  padding-right: 60px;
+  position: relative;
+  cursor: pointer;
+  border: none;
+}
+.accordion-style-4 .card-header[aria-expanded="true"]:before,
+.accordion-style-4 .card-header[aria-expanded="false"]:before {
+  bottom: -1px;
+  color: $principal;
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 19px;
+  right: 0;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: 50px;
+  transform: rotate(45deg);
+  transition: 0.3s linear all;
+}
+.accordion-style-4 .card-header[aria-expanded="false"]:before {
+  transform: rotate(0deg);
+  transition: 0.3s linear all;
+}
+
+.estiloTarjeta {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#swiperBeneficios,
+#swiperBeneficiosNav {
+  z-index: 0;
+}
+
+.pedidos {
+  .col {
+    border-bottom: 1px dashed $principal;
+    border-right: 1px dashed $principal;
+    &:nth-child(even) {
+      border-right: none;
+    }
+    &:nth-child(n + 9) {
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .pedidos {
+    .col {
+      &:nth-child(n) {
+        border-right: 1px dashed $principal;
+      }
+      &:nth-child(5n + 5) {
+        border-right: none;
+      }
+      &:nth-child(n + 6) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+/* --------------Vista Xl ------------- */
+@media (min-width: 1200px) {
+  .pedidos .container-lg {
+    max-width: 960px;
+  }
+}
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: $principal;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #fff6e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #45505b;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #728394;
+}
+
+.contact .info .fax,
+.contact .info .certificado,
+.contact .info .email,
+.contact .info .telefono {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .calle:hover i,
+.contact .info .fax:hover i,
+.contact .info .certificado:hover i,
+.contact .info .telefono:hover i {
+  background: $principal;
+  color: #fff;
+}

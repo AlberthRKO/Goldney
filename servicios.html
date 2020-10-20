@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GoldNey Electronics</title>
+
+    <!-- Cargando Bootstrap CSS -->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+
+    <!-- Cargando fuentes de Google-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&display=swap" rel="stylesheet">
+
+    <!-- Cargando "Font Awesome" -->
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
+
+    <!-- Cargando "Mmenu" -->
+    <link rel="stylesheet" href="libs/mmenu/dist/mmenu.css">
+
+    <!-- Cargando "Mburger" -->
+    <link rel="stylesheet" href="libs/mburger/dist/mburger.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Cargando "Swiper.js" -->
+    <link rel="stylesheet" href="libs/swiper/package/css/swiper.min.css">
+
+
+    <!-- estilo de carga de archivo -->
+    <link rel="stylesheet" href="css/dropzone.css">
+    <script src="js/dropzone.js"></script>
+
+
+    <!-- Cargando "Estilos personalizados" -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+</head>
+
+<body>
+    <div id="my-page">
+
+
+        <header id="presentacion" class="fixed-top">
+            <div id="topbar" class="d-none d-lg-flex align-items-center">
+                <div class="container d-flex">
+                    <div class="contact-info mr-auto text-black-50">
+                        <i class="fab fa-google-plus-g"></i> sales@goldney.net
+                        <i class="fab fa-whatsapp"></i> +34 91 523 54 28
+                        <i class="fa fa-map-marked-alt"></i> Calle Rodriguez San Pedro, 2, #404#, 28015,
+                        Madrid-Spain
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="skype"><i class="fab fa-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Seccion #navegacion -->
+            <nav class="navbar navbar-expand-lg navbar-dark py-0 px-0" id="navegacion"
+                style="background: #e99800 !important;">
+                <div class="container-fluid align-items-stretch flex-nowrap px-0 px-lg-5 px-xl-5">
+
+                    <button class="navbar-toggler collapsed mburger mburger--spin" type="button" data-toggle="collapse"
+                        data-target="#menu-principal" aria-controls="menu-prncipal" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <b></b>
+                        <b></b>
+                        <b></b>
+
+                    </button>
+
+                    <a class="navbar-brand align-self-center" href="index.html">
+                        <span class="h4 align-middle text-white" style="font-family: 'Aldrich', sans-serif;">GOLDNEY
+                            ELECTRONICS</span>
+                    </a>
+
+                    <div class="navbar-collapse collapse" id="menu-principal">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="ofertas.html">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Excedentes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pedidos.html">Pedidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div data-juggler-target="caja-buscar" data-juggler-media-query="(min-width: 1200px)"></div>
+
+                    <!-- <a href="#" class="btn-iconos d-none d-lg-flex align-items-lg-center px-lg-3 ">
+                        <i class="fas fa-phone-alt fa-lg"></i>
+                    </a> -->
+                    <!-- <div class="dropdown boton-carrito ml-auto">
+                        <button class="btn-iconos dropdown-toggle h-100" type="button" id="menu-carrito"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menu-carrito">
+                            <span class="dropdown-item-text text-nowrap"> Your cart is empty</span>
+                        </div>
+                    </div> .fin de .boton-carrito -->
+
+
+
+                    <button class="btn-iconos btn-buscar px-3 d-xl-none pt-1" type="button" data-toggle="collapse"
+                        data-target="#formulario-buscar" aria-expanded="false" aria-controls="formulario-buscar">
+
+                        <i class="fas fa-search fa-lg fa-fw"></i>
+                        <i class="fas fa-times fa-lg fa-fw"></i>
+
+                    </button>
+                    <!-- <a href="#" class="btn btn-outline-light d-none d-lg-block align-self-lg-center ml-lg-2 px-xl-3">Sign
+                        in</a> -->
+
+                </div>
+            </nav>
+
+            <form class="collapse d-xl-flex align-items-xl-center mr-xl-0" id="formulario-buscar"
+                data-juggler-source="caja-buscar">
+
+                <div class="input-group p-3 p-xl-0">
+                    <input type="text" name="campo-buscar" class="form-control campo-buscar"
+                        placeholder="Buscar en GoldNey" style="box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary boton-buscar  py-0 px-4 px-xl-2" type="button">
+                            <i class="fas fa-search fa-lg pt-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </header>
+        <div class="alert alert-info pt-5">
+            <div class="container pt-4 pt-lg-5">
+                <div class="row align-items-center pt-0 pt-lg-3 ">
+                    <div class="col-6 text-left text-uppercase font-weight-bold">Servicios</div>
+                    <div class="col-6 text-right text-uppercase" style="font-size: .6rem;">Home / Servicios</div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <section id="servicios" class="servicios accordion-style-4 bg-color">
+            <div class="container">
+                <div class="section-title" data-aos="zoom-in-up" data-aos-once="true">
+                    <h2>Servicios de localización de Componentes</h2>
+                    <p class="text-center text-lg-left">El departamento de compras de Goldney Electronics hace uso de su
+                        propia base de datos, que consta
+                        de más de 100 millones de referencias provenientes de miles proveedores distintos, lo que nos
+                        permite localizar todo tipo de stock con la mayor brevedad. A través de esta amplia gama de
+                        producto disponible, suministramos habitualmente a fabricantes, montadores, distribuidores
+                        franquicia, así como a otros brokers. <br><br>
+
+                        La dimensión global del mercado de los componentes electrónicos hace que nuestra experiencia y
+                        nuestros esfuerzos vayan dirigidos a un seguimiento y conocimiento exhaustivo de los principales
+                        mercados de componentes de Europa, Norteamérica y Asia. Esto nos permite obtener en cada momento
+                        las mejores ofertas posibles en términos de precio y plazo para nuestros clientes así como
+                        conseguir componentes obsoletos o de difícil localización. <br><br>
+
+                        Existe una preocupación y un problema creciente para el consumidor de componentes electrónicos
+                        sobre la calidad del producto debido a la venta de producto defectuoso proveniente, en su mayor
+                        proporción, del mercado asiático. Los muchos años de experiencia en el sector permiten que
+                        nuestros compradores sepan qué proveedores evitar y a cuáles acudir para conseguir producto de
+                        calidad en los plazos pactados. <br><br>
+
+                        Además de prestar un servicio integrado de localización, entrega de producto y atención
+                        post-venta a sus clientes, Goldney Electronics también ofrece los siguientes servicios de valor
+                        añadido:</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 mt-5">
+                        <div id="accordion-4-one">
+                            <div class="card estiloTarjeta">
+                                <div class="card-header bg-white text-primary font-weight-bold"
+                                    id="accordion-4-heading-1" data-toggle="collapse"
+                                    data-target="#accordion-4-collapse-1" aria-expanded="true"
+                                    aria-controls="accordion-4-collapse-1"><i
+                                        class="fas fa-arrow-circle-right pr-2"></i>
+                                    Confección de kits
+                                </div>
+                                <div id="accordion-4-collapse-1" class="collapse"
+                                    aria-labelledby="accordion-4-heading-1" data-parent="#accordion-4-one">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 text-primary"><i class="fas fa-hand-point-right pr-2"></i>
+                                            </p>
+                                            <p class="mb-0">Confección de kits</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card estiloTarjeta">
+                                <div class="card-header bg-white text-primary font-weight-bold"
+                                    id="accordion-4-heading-2" data-toggle="collapse"
+                                    data-target="#accordion-4-collapse-2" aria-expanded="false"
+                                    aria-controls="accordion-4-collapse-2"><i
+                                        class="fas fa-arrow-circle-right pr-2"></i>
+                                    Gestión de producto de Excedente
+                                </div>
+                                <div id="accordion-4-collapse-2" class="collapse"
+                                    aria-labelledby="accordion-4-heading-2" data-parent="#accordion-4-one">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 text-primary"><i class="fas fa-hand-point-right pr-2"></i>
+                                            </p>
+                                            <p class="mb-0">Compra de lotes de Stock</p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 text-primary"><i class="fas fa-hand-point-right pr-2"></i>
+                                            </p>
+                                            <p class="mb-0">Proyección de sus stocks en mercados internacionales a
+                                                través de foros especializados</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card estiloTarjeta">
+                                <div class="card-header bg-white text-primary font-weight-bold"
+                                    id="accordion-4-heading-3" data-toggle="collapse"
+                                    data-target="#accordion-4-collapse-3" aria-expanded="false"
+                                    aria-controls="accordion-4-collapse-3"><i
+                                        class="fas fa-arrow-circle-right pr-2"></i>
+                                    Consignación de Stock
+                                </div>
+                                <div id="accordion-4-collapse-3" class="collapse"
+                                    aria-labelledby="accordion-4-heading-3" data-parent="#accordion-4-one">
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-center">
+                                            <p class="mb-0 text-primary"><i class="fas fa-hand-point-right pr-2"></i>
+                                            </p>
+                                            <p class="mb-0">Consigne su excedente en los almacenes de Goldney para
+                                                optimizar el valor de su stock y ahorrar costes de inventario/almacenaje
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <footer id="pie-pagina" class="bg-footer text-light overflow-hidden">
+
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12  py-2 columna-inclinada col-md-6 col-xl-5">
+                        <!-- nuevo sistema para anidar -->
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-12 text-center text-md-left pt-2">
+                                <span class="text-white h2" style="font-family: 'Aldrich', sans-serif;">GOLDNEY
+                                    ELECTRONICS</span>
+                            </div>
+                            <!-- para que se adapte a su contenido -->
+                            <!-- <div class="col-auto text-black-50">
+                                <i class="fas fa-notes-medical fa-4x"></i>
+                            </div> -->
+                            <div class="col-auto text-secondary pt-1 text-center text-md-left">
+                                <p class="text-secondary font-weight-bold">Distribuidor de Componentes Electronicos en
+                                    Madrid (ESPAÑA)
+                                </p>
+                            </div>
+
+                            <div class="col-auto">
+                                <ul class="list-unstyled">
+                                    <div class="row">
+                                        <li class="d-flex my-1 col-12 col-lg-6">
+                                            <div class="icon-box mr-3">
+                                                <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+                                            </div>
+                                            <!-- fa-fw alinea los iconos -->
+                                            <div class="detalle mt-1">
+                                                <span class=" text-white">Rodriguez San Pedro, 2,
+                                                    #404#, 28015
+                                                </span>
+                                            </div>
+
+                                        </li>
+
+                                        <li class="d-flex my-1 col-12 col-lg-6">
+                                            <div class="icon-box mr-3">
+                                                <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                                            </div>
+                                            <div class="detalle mt-1">
+
+                                                <span class=" text-white">+34 91 523 54 28</span>
+                                            </div>
+
+                                        </li>
+                                    </div>
+                                    <div class="row">
+                                        <li class="d-flex my-1 col-12 col-lg-6">
+                                            <div class="icon-box mr-3">
+                                                <div class="icon"><i class="fas fa-envelope"></i></div>
+                                            </div>
+                                            <div class="detalle mt-1">
+
+                                                <span class=" text-white">sales@goldney.com</span>
+                                            </div>
+
+                                        </li>
+                                        <li class="d-flex my-1 col-12 col-lg-6">
+                                            <div class="icon-box mr-3">
+                                                <div class="icon"><i class="fas fa-fax"></i></div>
+                                            </div>
+                                            <div class="detalle mt-1">
+
+                                                <span class=" text-white">+34 91 521 42 50</span>
+                                            </div>
+
+                                        </li>
+                                    </div>
+
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 py-2 text-center small col-md-6 text-md-right col-xl-7 mt-3">
+                        <ul class="list-unstyled d-inline-flex text-uppercase enlaces-secundario pb-2">
+                            <div class="row px-md-3 px-lg-0 align-items-center">
+                                <div class="col-4"><img src="images/patrocinadores/logo-secartys.png" class="img-fluid"
+                                        alt="" width="100">
+                                </div>
+                                <div class="col-4"><img src="images/patrocinadores/erai.png" class="img-fluid" alt=""
+                                        width="100">
+                                </div>
+                                <div class="col-4"><img src="images/patrocinadores/rohs.png" class="img-fluid" alt=""
+                                        width="100">
+                                </div>
+                            </div>
+
+                        </ul>
+                        <p class="text-dark mb-1 derechosAutor mb-0"><i class="fas fa-copyright text-primary "></i> 2020
+                            Copyright by <span class="text-primary font-weight-bold h6"
+                                style="font-family: 'Aldrich', sans-serif;">GOLDNEY</span></p>
+                        <p class="derechosAutor mb-0">Todos los derechos reservados</p>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+    </div> <!-- Fin de #my-page -->
+
+
+
+
+
+    <!-- Carga de jQuery -->
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+
+    <!-- Carga de Popper.js -->
+    <script src="libs/popper.js/popper.min.js"></script>
+
+    <!-- Carga de Bootstrap.js -->
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Carga de Mmenu.js -->
+    <script src="libs/mmenu/dist/mmenu.js"></script>
+
+    <!-- Carga de Juggler.js -->
+    <script src="libs/juggler/dist/juggler.min.js"></script>
+
+    <script src="js/aos.js"></script>
+
+    <!-- Carga de Swiper.js -->
+    <script src="libs/swiper/package/js/swiper.min.js"></script>
+
+    <!-- Carga de hc-sticky.js -->
+    <script src="libs/hc-sticky/dist/hc-sticky.js"></script>
+
+
+
+    <!-- Carga de mis-scripts.js | Inicia las funiones de los scripts -->
+    <script src="js/mis-scripts.js"></script>
+
+
+
+
+</body>
+
+</html>
