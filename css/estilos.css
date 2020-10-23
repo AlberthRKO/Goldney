@@ -671,6 +671,15 @@ Estilos Formulario
   font-size: 15px;
   line-height: 1.42857; }
 
+.btn-circle2 {
+  width: 30px;
+  height: 30px;
+  padding: 5px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.42857; }
+
 .accordion-style-4 .card {
   margin-bottom: 10px;
   border-width: 0 0 0 2px;
@@ -769,5 +778,27 @@ Estilos Formulario
 .contact .info .telefono:hover i {
   background: #e99800;
   color: #fff; }
+
+.alert-primary {
+  color: #2c4964;
+  background-color: rgba(233, 152, 0, 0.5);
+  border-color: #e99800; }
+
+.estiloProducto {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease; }
+
+.estiloProducto:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); }
+
+.estiloProducto .img img {
+  width: 100 .estiloProducto .img img;
+  transition: all 0.4s ease; }
+
+.estiloProducto .img:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.1) drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.1)); }
 
 /*# sourceMappingURL=estilos.css.map */
