@@ -1,4 +1,17 @@
 $(function () {
+  "use strict";
+
+
+
+  $(window).on('load', function () {
+    if ($('#preloader').length) {
+      $('#preloader').delay(100).fadeOut('slow', function () {
+        $(this).remove();
+      });
+    }
+  });
+
+
 
 
   /* ------------------------------------
@@ -40,6 +53,26 @@ $(function () {
      3. Configuración del Juggler.js
  -------------------------------------*/
   Juggler.init();
+
+
+
+  // Back to top button
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+
+  $('.back-to-top').click(function () {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1000)
+    return false;
+  });
+
+
 
   /* ------------------------------------
  4. Configuración #swiperBeneficios
@@ -89,7 +122,7 @@ $(function () {
 -------------------------------------*/
 
 
-  var swiperBeneficios = new Swiper('#swiperFunciones', {
+  var swiperBeneficios = new Swiper('#swiperTipos', {
 
     speed: 400,
     grabCursor: true,
@@ -113,11 +146,14 @@ $(function () {
       enabled: true,
       onlyInViewport: true,
     },
+    autoplay: {
+      delay: 2000
+    },
     //Componente Thumbs
     thumbs: {
       swiper: {
-        el: '#swiperFuncionesNav',
-        slidesPerView: 6,
+        el: '#swiperTiposNav',
+        slidesPerView: 3,
         watchOverflow: true
 
       }
@@ -255,6 +291,8 @@ $('.borrarDatos').click(function () {
   $('.datosComponente').removeClass('d-flex');
   $('.datosComponente').addClass("d-none");
 });
+
+
 
 
 

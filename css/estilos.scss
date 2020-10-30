@@ -24,6 +24,18 @@ body {
   font-weight: 300;
 }
 
+#my-page::after {
+  content: "";
+  background: url("../images/bg.jpg");
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 //---------------------------------------
 // 3. ESTILOS GENERALES PARA LOS BOTONES
 //---------------------------------------
@@ -706,6 +718,7 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
+  background-color: white;
   text-align: center;
   padding: 80px 20px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -834,6 +847,7 @@ footer .icon-box:hover .icon i {
 
 // Seccion de Formas de Pago
 .estiloTabla {
+  background-color: white;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -1003,7 +1017,9 @@ Estilos Formulario
 }
 
 #swiperBeneficios,
-#swiperBeneficiosNav {
+#swiperBeneficiosNav,
+#swiperTipos,
+#swiperTiposNav {
   z-index: 0;
 }
 
@@ -1109,4 +1125,91 @@ Estilos Formulario
 .estiloProducto .img:hover img {
   transform: scale(1.05);
   filter: brightness(1.1) drop-shadow(0px 2px 15px rgba(0, 0, 0, 0.1));
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader::after {
+  content: url("../images/LOgo.png");
+  position: fixed;
+  top: calc(50% - 93px);
+  left: calc(50% - 93px);
+  transform: scale(0.35);
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  border: 6px solid $principal;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  right: 15px;
+  bottom: 15px;
+  background: $principal;
+  color: #fff;
+  transition: display 0.5s ease-in-out;
+  z-index: 99999;
+}
+
+.back-to-top i {
+  font-size: 24px;
+  position: absolute;
+  top: 7px;
+  left: 8px;
+}
+
+.back-to-top:hover {
+  color: #fff;
+  background: #d58b02;
+  transition: background 0.2s ease-in-out;
 }
